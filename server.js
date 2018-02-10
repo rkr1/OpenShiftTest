@@ -11,7 +11,7 @@ app.use(express.static(__dirname + '/public'))
    .use(cookieParser());
 
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
-    ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1' || '0.0.0.0';
+    ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
 // error handling
 app.use(function(err, req, res, next){
